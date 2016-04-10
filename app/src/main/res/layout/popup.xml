@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f2f2"
+    android:orientation="vertical"
+    android:padding="10px">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/Theme.AppCompat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/category"
+        style="@style/Theme.AppCompat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/title"/>
+
+
+    <TextView
+        android:id="@+id/summary"
+        style="@style/Theme.AppCompat"
+        android:textSize="12sp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/category"
+        android:layout_above="@+id/backButton"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:id="@+id/backButton"
+        style="@style/Theme.AppCompat"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttonshape"
+        android:drawablePadding="3sp"
+        android:text="ΕΠΙΣΤΡΟΦΗ" />
+    <Button
+        android:id="@+id/goToSiteButton"
+        style="@style/Theme.AppCompat"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:drawablePadding="3sp"
+        android:text="ΟΛΟ ΤΟ ΑΡΘΡΟ"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/summary"
+        android:layout_alignRight="@+id/summary"
+        android:layout_alignEnd="@+id/summary" />
+</RelativeLayout>
